@@ -1,0 +1,325 @@
+/* Полоса диапазона под hero — одна строка, не занимает экран. */
+.scope {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.scopeInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  align-items: center;
+  padding-block: var(--space-4);
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.scopeItem {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.scopeItem:not(:last-child)::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+/* Процесс */
+.process {
+  padding-block: var(--space-16);
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.processLead {
+  font-size: clamp(17px, 1.8vw, 19px);
+  color: var(--ink-soft);
+  margin-bottom: var(--space-6);
+}
+
+.aiBlock {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  background: var(--surface-sunk);
+  margin-bottom: var(--space-5);
+}
+
+.aiTitle {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-3);
+}
+
+.aiBlock p:last-child {
+  margin-bottom: 0;
+}
+
+.limit {
+  font-size: 15px;
+  color: var(--ink-soft);
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--line-strong);
+}
+
+.tools {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.toolGroup {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.toolLabel {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.toolValue {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* О себе */
+.about {
+  padding-block: var(--space-16);
+  border-top: 1px solid var(--line);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.aboutText p {
+  font-size: clamp(17px, 1.8vw, 19px);
+  color: var(--ink-soft);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin-top: var(--space-6);
+}
+
+.fact {
+  padding: 7px var(--space-4);
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  background: var(--surface);
+}
+
+.experience {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.expItem {
+  display: grid;
+  gap: var(--space-1);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--line);
+}
+
+.expPeriod {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.expCompany {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.expRole {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.expDetails {
+  margin: var(--space-1) 0 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+/* Контакты */
+.contact {
+  padding-block: var(--space-16) var(--space-20);
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.contactLead {
+  font-size: clamp(17px, 1.8vw, 19px);
+  color: var(--ink-soft);
+  margin-bottom: var(--space-8);
+}
+
+.directList {
+  display: grid;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.directLink {
+  display: grid;
+  gap: 2px;
+  text-decoration: none;
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--canvas);
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.directLink:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.directLabel {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.directValue {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(17px, 2vw, 21px);
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+/* Подвал */
+.footer {
+  padding-block: var(--space-10);
+  border-top: 1px solid var(--line);
+}
+
+.footerInner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--ink-faint);
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}
+
+.footerLinks a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  color: var(--ink);
+}
+
+/* Липкая кнопка на мобильном */
+.stickyCta {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .processGrid,
+  .aboutGrid,
+  .contactGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 640px) {
+  .process,
+  .about,
+  .contact {
+    padding-block: var(--space-12);
+  }
+
+  .toolGroup {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-1);
+  }
+
+  .stickyCta {
+    display: block;
+    position: fixed;
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+    z-index: 40;
+    opacity: 0;
+    transform: translateY(120%);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+    pointer-events: none;
+  }
+
+  .stickyVisible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .stickyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 52px;
+    border-radius: 100px;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgb(22 21 26 / 0.25);
+  }
+}

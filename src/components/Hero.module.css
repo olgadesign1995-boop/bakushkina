@@ -1,0 +1,193 @@
+.hero {
+  padding-top: calc(var(--header-height) + var(--space-10));
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--surface);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3f9a54;
+}
+
+.title {
+  margin-bottom: var(--space-5);
+}
+
+.name {
+  display: block;
+  font-size: clamp(13px, 1.4vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-sans);
+}
+
+.lead {
+  max-width: 54ch;
+  margin-inline: auto;
+  color: var(--ink-soft);
+  font-size: clamp(15px, 1.5vw, 17px);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+/* Полюса композиции: слева предмет «на полке», справа кадр «в ленте». */
+.pole {
+  position: relative;
+}
+
+.poleFigure {
+  margin: 0;
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.shelf .poleFigure {
+  transform: translateY(var(--shelf-shift, 0));
+}
+
+.feed .poleFigure {
+  transform: translateY(var(--feed-shift, 0));
+}
+
+.shelfImage {
+  width: 100%;
+  border-radius: var(--radius-md);
+  /* Мягкая тень «предмета на поверхности». */
+  filter: drop-shadow(0 24px 28px rgb(22 21 26 / 0.13));
+}
+
+/* Линия полки под предметом. */
+.shelfLine {
+  margin-top: var(--space-4);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--line-strong) 15%,
+    var(--line-strong) 85%,
+    transparent
+  );
+}
+
+.poleLabel {
+  margin-top: var(--space-3);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+/* Правый полюс: кадр в рамке телефона-ленты. */
+.feedFrame {
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  padding: var(--space-2);
+  background: var(--surface);
+  box-shadow: 0 18px 40px rgb(22 21 26 / 0.08);
+}
+
+.feedImage {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.feedBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-2) var(--space-1);
+}
+
+.feedDots {
+  display: flex;
+  gap: 4px;
+}
+
+.feedDots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.feedMeta {
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "text text"
+      "shelf feed";
+    gap: var(--space-6);
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  .shelf {
+    grid-area: shelf;
+  }
+
+  .feed {
+    grid-area: feed;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: calc(var(--header-height) + var(--space-6));
+    padding-bottom: var(--space-8);
+  }
+
+  .poleFigure {
+    transform: none !important;
+  }
+
+  .poleLabel {
+    font-size: 11px;
+  }
+}

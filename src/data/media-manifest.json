@@ -1,0 +1,1695 @@
+{
+  "generatedAt": "2026-08-11T09:27:37.014Z",
+  "images": [
+    {
+      "id": "domashniy-01",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1536,
+      "height": 2752,
+      "aspectRatio": 0.5581,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/domashniy/domashniy-01-1200.avif",
+          "webp": "/media/domashniy/domashniy-01-1200.webp",
+          "jpg": "/media/domashniy/domashniy-01-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-01-800.avif",
+          "webp": "/media/domashniy/domashniy-01-800.webp",
+          "jpg": "/media/domashniy/domashniy-01-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-02",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1108,
+      "aspectRatio": 0.9747,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-02-800.avif",
+          "webp": "/media/domashniy/domashniy-02-800.webp",
+          "jpg": "/media/domashniy/domashniy-02-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-03",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-03-800.avif",
+          "webp": "/media/domashniy/domashniy-03-800.webp",
+          "jpg": "/media/domashniy/domashniy-03-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-04",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1355,
+      "aspectRatio": 0.797,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-04-800.avif",
+          "webp": "/media/domashniy/domashniy-04-800.webp",
+          "jpg": "/media/domashniy/domashniy-04-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-05",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1267,
+      "height": 1737,
+      "aspectRatio": 0.7294,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/domashniy/domashniy-05-1200.avif",
+          "webp": "/media/domashniy/domashniy-05-1200.webp",
+          "jpg": "/media/domashniy/domashniy-05-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-05-800.avif",
+          "webp": "/media/domashniy/domashniy-05-800.webp",
+          "jpg": "/media/domashniy/domashniy-05-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-06",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1479,
+      "aspectRatio": 0.7302,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-06-800.avif",
+          "webp": "/media/domashniy/domashniy-06-800.webp",
+          "jpg": "/media/domashniy/domashniy-06-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-07",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 840,
+      "height": 834,
+      "aspectRatio": 1.0072,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-07-800.avif",
+          "webp": "/media/domashniy/domashniy-07-800.webp",
+          "jpg": "/media/domashniy/domashniy-07-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-08",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 840,
+      "height": 1264,
+      "aspectRatio": 0.6646,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-08-800.avif",
+          "webp": "/media/domashniy/domashniy-08-800.webp",
+          "jpg": "/media/domashniy/domashniy-08-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-09",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1080,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-09-800.avif",
+          "webp": "/media/domashniy/domashniy-09-800.webp",
+          "jpg": "/media/domashniy/domashniy-09-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-10",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 840,
+      "height": 1264,
+      "aspectRatio": 0.6646,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-10-800.avif",
+          "webp": "/media/domashniy/domashniy-10-800.webp",
+          "jpg": "/media/domashniy/domashniy-10-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-11",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 323,
+      "height": 491,
+      "aspectRatio": 0.6578,
+      "variants": [
+        {
+          "width": 323,
+          "avif": "/media/domashniy/domashniy-11-323.avif",
+          "webp": "/media/domashniy/domashniy-11-323.webp",
+          "jpg": "/media/domashniy/domashniy-11-323.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-12",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 404,
+      "height": 728,
+      "aspectRatio": 0.5549,
+      "variants": [
+        {
+          "width": 404,
+          "avif": "/media/domashniy/domashniy-12-404.avif",
+          "webp": "/media/domashniy/domashniy-12-404.webp",
+          "jpg": "/media/domashniy/domashniy-12-404.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-13",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 1080,
+      "height": 1350,
+      "aspectRatio": 0.8,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-13-800.avif",
+          "webp": "/media/domashniy/domashniy-13-800.webp",
+          "jpg": "/media/domashniy/domashniy-13-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-14",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 200,
+      "height": 200,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 200,
+          "avif": "/media/domashniy/domashniy-14-200.avif",
+          "webp": "/media/domashniy/domashniy-14-200.webp",
+          "jpg": "/media/domashniy/domashniy-14-200.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-15",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 404,
+      "height": 724,
+      "aspectRatio": 0.558,
+      "variants": [
+        {
+          "width": 404,
+          "avif": "/media/domashniy/domashniy-15-404.avif",
+          "webp": "/media/domashniy/domashniy-15-404.webp",
+          "jpg": "/media/domashniy/domashniy-15-404.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-16",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 452,
+      "height": 772,
+      "aspectRatio": 0.5855,
+      "variants": [
+        {
+          "width": 452,
+          "avif": "/media/domashniy/domashniy-16-452.avif",
+          "webp": "/media/domashniy/domashniy-16-452.webp",
+          "jpg": "/media/domashniy/domashniy-16-452.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-17",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 396,
+      "height": 720,
+      "aspectRatio": 0.55,
+      "variants": [
+        {
+          "width": 396,
+          "avif": "/media/domashniy/domashniy-17-396.avif",
+          "webp": "/media/domashniy/domashniy-17-396.webp",
+          "jpg": "/media/domashniy/domashniy-17-396.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-18",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 396,
+      "height": 724,
+      "aspectRatio": 0.547,
+      "variants": [
+        {
+          "width": 396,
+          "avif": "/media/domashniy/domashniy-18-396.avif",
+          "webp": "/media/domashniy/domashniy-18-396.webp",
+          "jpg": "/media/domashniy/domashniy-18-396.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-19",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 396,
+      "height": 728,
+      "aspectRatio": 0.544,
+      "variants": [
+        {
+          "width": 396,
+          "avif": "/media/domashniy/domashniy-19-396.avif",
+          "webp": "/media/domashniy/domashniy-19-396.webp",
+          "jpg": "/media/domashniy/domashniy-19-396.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-20",
+      "project": "domashniy",
+      "kind": "frame",
+      "width": 992,
+      "height": 1302,
+      "aspectRatio": 0.7619,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-20-800.avif",
+          "webp": "/media/domashniy/domashniy-20-800.webp",
+          "jpg": "/media/domashniy/domashniy-20-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "domashniy-cover",
+      "project": "domashniy",
+      "kind": "cover",
+      "width": 1644,
+      "height": 1644,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/domashniy/domashniy-cover-1200.avif",
+          "webp": "/media/domashniy/domashniy-cover-1200.webp",
+          "jpg": "/media/domashniy/domashniy-cover-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/domashniy/domashniy-cover-800.avif",
+          "webp": "/media/domashniy/domashniy-cover-800.webp",
+          "jpg": "/media/domashniy/domashniy-cover-800.jpg"
+        },
+        {
+          "width": 480,
+          "avif": "/media/domashniy/domashniy-cover-480.avif",
+          "webp": "/media/domashniy/domashniy-cover-480.webp",
+          "jpg": "/media/domashniy/domashniy-cover-480.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-01",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 992,
+      "height": 1200,
+      "aspectRatio": 0.8267,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-01-800.avif",
+          "webp": "/media/ecozavr/ecozavr-01-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-01-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-02",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 690,
+      "height": 469,
+      "aspectRatio": 1.4712,
+      "variants": [
+        {
+          "width": 690,
+          "avif": "/media/ecozavr/ecozavr-02-690.avif",
+          "webp": "/media/ecozavr/ecozavr-02-690.webp",
+          "jpg": "/media/ecozavr/ecozavr-02-690.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-03",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1200,
+      "height": 800,
+      "aspectRatio": 1.5,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-03-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-03-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-03-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-03-800.avif",
+          "webp": "/media/ecozavr/ecozavr-03-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-03-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-04",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 687,
+      "height": 469,
+      "aspectRatio": 1.4648,
+      "variants": [
+        {
+          "width": 687,
+          "avif": "/media/ecozavr/ecozavr-04-687.avif",
+          "webp": "/media/ecozavr/ecozavr-04-687.webp",
+          "jpg": "/media/ecozavr/ecozavr-04-687.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-05",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1000,
+      "height": 1000,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-05-800.avif",
+          "webp": "/media/ecozavr/ecozavr-05-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-05-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-06",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1862,
+      "height": 1265,
+      "aspectRatio": 1.4719,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-06-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-06-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-06-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-06-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-06-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-06-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-06-800.avif",
+          "webp": "/media/ecozavr/ecozavr-06-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-06-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-07",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1792,
+      "height": 2400,
+      "aspectRatio": 0.7467,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-07-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-07-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-07-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-07-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-07-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-07-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-07-800.avif",
+          "webp": "/media/ecozavr/ecozavr-07-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-07-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-08",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1792,
+      "height": 2400,
+      "aspectRatio": 0.7467,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-08-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-08-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-08-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-08-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-08-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-08-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-08-800.avif",
+          "webp": "/media/ecozavr/ecozavr-08-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-08-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-09",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1792,
+      "height": 2400,
+      "aspectRatio": 0.7467,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-09-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-09-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-09-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-09-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-09-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-09-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-09-800.avif",
+          "webp": "/media/ecozavr/ecozavr-09-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-09-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-10",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-10-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-10-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-10-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-10-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-10-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-10-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-10-800.avif",
+          "webp": "/media/ecozavr/ecozavr-10-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-10-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-11",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-11-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-11-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-11-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-11-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-11-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-11-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-11-800.avif",
+          "webp": "/media/ecozavr/ecozavr-11-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-11-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-12",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-12-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-12-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-12-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-12-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-12-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-12-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-12-800.avif",
+          "webp": "/media/ecozavr/ecozavr-12-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-12-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-13",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-13-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-13-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-13-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-13-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-13-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-13-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-13-800.avif",
+          "webp": "/media/ecozavr/ecozavr-13-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-13-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-14",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1792,
+      "height": 2400,
+      "aspectRatio": 0.7467,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-14-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-14-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-14-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-14-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-14-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-14-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-14-800.avif",
+          "webp": "/media/ecozavr/ecozavr-14-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-14-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-15",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-15-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-15-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-15-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-15-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-15-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-15-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-15-800.avif",
+          "webp": "/media/ecozavr/ecozavr-15-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-15-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-16",
+      "project": "ecozavr",
+      "kind": "frame",
+      "width": 1792,
+      "height": 2400,
+      "aspectRatio": 0.7467,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/ecozavr/ecozavr-16-1600.avif",
+          "webp": "/media/ecozavr/ecozavr-16-1600.webp",
+          "jpg": "/media/ecozavr/ecozavr-16-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-16-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-16-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-16-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-16-800.avif",
+          "webp": "/media/ecozavr/ecozavr-16-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-16-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ecozavr-cover",
+      "project": "ecozavr",
+      "kind": "cover",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/ecozavr/ecozavr-cover-1200.avif",
+          "webp": "/media/ecozavr/ecozavr-cover-1200.webp",
+          "jpg": "/media/ecozavr/ecozavr-cover-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/ecozavr/ecozavr-cover-800.avif",
+          "webp": "/media/ecozavr/ecozavr-cover-800.webp",
+          "jpg": "/media/ecozavr/ecozavr-cover-800.jpg"
+        },
+        {
+          "width": 480,
+          "avif": "/media/ecozavr/ecozavr-cover-480.avif",
+          "webp": "/media/ecozavr/ecozavr-cover-480.webp",
+          "jpg": "/media/ecozavr/ecozavr-cover-480.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hero-01",
+      "project": "hero",
+      "kind": "frame",
+      "width": 2752,
+      "height": 1536,
+      "aspectRatio": 1.7917,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/hero/hero-01-1600.avif",
+          "webp": "/media/hero/hero-01-1600.webp",
+          "jpg": "/media/hero/hero-01-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/hero/hero-01-1200.avif",
+          "webp": "/media/hero/hero-01-1200.webp",
+          "jpg": "/media/hero/hero-01-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/hero/hero-01-800.avif",
+          "webp": "/media/hero/hero-01-800.webp",
+          "jpg": "/media/hero/hero-01-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hero-02",
+      "project": "hero",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/hero/hero-02-1600.avif",
+          "webp": "/media/hero/hero-02-1600.webp",
+          "jpg": "/media/hero/hero-02-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/hero/hero-02-1200.avif",
+          "webp": "/media/hero/hero-02-1200.webp",
+          "jpg": "/media/hero/hero-02-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/hero/hero-02-800.avif",
+          "webp": "/media/hero/hero-02-800.webp",
+          "jpg": "/media/hero/hero-02-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hero-03",
+      "project": "hero",
+      "kind": "frame",
+      "width": 1856,
+      "height": 2304,
+      "aspectRatio": 0.8056,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/hero/hero-03-1600.avif",
+          "webp": "/media/hero/hero-03-1600.webp",
+          "jpg": "/media/hero/hero-03-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/hero/hero-03-1200.avif",
+          "webp": "/media/hero/hero-03-1200.webp",
+          "jpg": "/media/hero/hero-03-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/hero/hero-03-800.avif",
+          "webp": "/media/hero/hero-03-800.webp",
+          "jpg": "/media/hero/hero-03-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hero-04",
+      "project": "hero",
+      "kind": "frame",
+      "width": 2000,
+      "height": 3000,
+      "aspectRatio": 0.6667,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/hero/hero-04-1600.avif",
+          "webp": "/media/hero/hero-04-1600.webp",
+          "jpg": "/media/hero/hero-04-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/hero/hero-04-1200.avif",
+          "webp": "/media/hero/hero-04-1200.webp",
+          "jpg": "/media/hero/hero-04-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/hero/hero-04-800.avif",
+          "webp": "/media/hero/hero-04-800.webp",
+          "jpg": "/media/hero/hero-04-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-01",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1024,
+      "height": 1024,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-01-800.avif",
+          "webp": "/media/insurance/insurance-01-800.webp",
+          "jpg": "/media/insurance/insurance-01-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-02",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-02-1600.avif",
+          "webp": "/media/insurance/insurance-02-1600.webp",
+          "jpg": "/media/insurance/insurance-02-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-02-1200.avif",
+          "webp": "/media/insurance/insurance-02-1200.webp",
+          "jpg": "/media/insurance/insurance-02-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-02-800.avif",
+          "webp": "/media/insurance/insurance-02-800.webp",
+          "jpg": "/media/insurance/insurance-02-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-03",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 2341,
+      "height": 4071,
+      "aspectRatio": 0.575,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-03-1600.avif",
+          "webp": "/media/insurance/insurance-03-1600.webp",
+          "jpg": "/media/insurance/insurance-03-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-03-1200.avif",
+          "webp": "/media/insurance/insurance-03-1200.webp",
+          "jpg": "/media/insurance/insurance-03-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-03-800.avif",
+          "webp": "/media/insurance/insurance-03-800.webp",
+          "jpg": "/media/insurance/insurance-03-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-04",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-04-1600.avif",
+          "webp": "/media/insurance/insurance-04-1600.webp",
+          "jpg": "/media/insurance/insurance-04-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-04-1200.avif",
+          "webp": "/media/insurance/insurance-04-1200.webp",
+          "jpg": "/media/insurance/insurance-04-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-04-800.avif",
+          "webp": "/media/insurance/insurance-04-800.webp",
+          "jpg": "/media/insurance/insurance-04-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-05",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-05-1600.avif",
+          "webp": "/media/insurance/insurance-05-1600.webp",
+          "jpg": "/media/insurance/insurance-05-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-05-1200.avif",
+          "webp": "/media/insurance/insurance-05-1200.webp",
+          "jpg": "/media/insurance/insurance-05-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-05-800.avif",
+          "webp": "/media/insurance/insurance-05-800.webp",
+          "jpg": "/media/insurance/insurance-05-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-06",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 2048,
+      "height": 2048,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-06-1600.avif",
+          "webp": "/media/insurance/insurance-06-1600.webp",
+          "jpg": "/media/insurance/insurance-06-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-06-1200.avif",
+          "webp": "/media/insurance/insurance-06-1200.webp",
+          "jpg": "/media/insurance/insurance-06-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-06-800.avif",
+          "webp": "/media/insurance/insurance-06-800.webp",
+          "jpg": "/media/insurance/insurance-06-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-07",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1536,
+      "height": 2752,
+      "aspectRatio": 0.5581,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-07-1200.avif",
+          "webp": "/media/insurance/insurance-07-1200.webp",
+          "jpg": "/media/insurance/insurance-07-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-07-800.avif",
+          "webp": "/media/insurance/insurance-07-800.webp",
+          "jpg": "/media/insurance/insurance-07-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-08",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-08-1600.avif",
+          "webp": "/media/insurance/insurance-08-1600.webp",
+          "jpg": "/media/insurance/insurance-08-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-08-1200.avif",
+          "webp": "/media/insurance/insurance-08-1200.webp",
+          "jpg": "/media/insurance/insurance-08-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-08-800.avif",
+          "webp": "/media/insurance/insurance-08-800.webp",
+          "jpg": "/media/insurance/insurance-08-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-09",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-09-1600.avif",
+          "webp": "/media/insurance/insurance-09-1600.webp",
+          "jpg": "/media/insurance/insurance-09-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-09-1200.avif",
+          "webp": "/media/insurance/insurance-09-1200.webp",
+          "jpg": "/media/insurance/insurance-09-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-09-800.avif",
+          "webp": "/media/insurance/insurance-09-800.webp",
+          "jpg": "/media/insurance/insurance-09-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-10",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-10-1600.avif",
+          "webp": "/media/insurance/insurance-10-1600.webp",
+          "jpg": "/media/insurance/insurance-10-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-10-1200.avif",
+          "webp": "/media/insurance/insurance-10-1200.webp",
+          "jpg": "/media/insurance/insurance-10-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-10-800.avif",
+          "webp": "/media/insurance/insurance-10-800.webp",
+          "jpg": "/media/insurance/insurance-10-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-11",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-11-1600.avif",
+          "webp": "/media/insurance/insurance-11-1600.webp",
+          "jpg": "/media/insurance/insurance-11-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-11-1200.avif",
+          "webp": "/media/insurance/insurance-11-1200.webp",
+          "jpg": "/media/insurance/insurance-11-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-11-800.avif",
+          "webp": "/media/insurance/insurance-11-800.webp",
+          "jpg": "/media/insurance/insurance-11-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-12",
+      "project": "insurance",
+      "kind": "frame",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/insurance/insurance-12-1600.avif",
+          "webp": "/media/insurance/insurance-12-1600.webp",
+          "jpg": "/media/insurance/insurance-12-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-12-1200.avif",
+          "webp": "/media/insurance/insurance-12-1200.webp",
+          "jpg": "/media/insurance/insurance-12-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-12-800.avif",
+          "webp": "/media/insurance/insurance-12-800.webp",
+          "jpg": "/media/insurance/insurance-12-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "insurance-cover",
+      "project": "insurance",
+      "kind": "cover",
+      "width": 3816,
+      "height": 3816,
+      "aspectRatio": 1,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/insurance/insurance-cover-1200.avif",
+          "webp": "/media/insurance/insurance-cover-1200.webp",
+          "jpg": "/media/insurance/insurance-cover-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/insurance/insurance-cover-800.avif",
+          "webp": "/media/insurance/insurance-cover-800.webp",
+          "jpg": "/media/insurance/insurance-cover-800.jpg"
+        },
+        {
+          "width": 480,
+          "avif": "/media/insurance/insurance-cover-480.avif",
+          "webp": "/media/insurance/insurance-cover-480.webp",
+          "jpg": "/media/insurance/insurance-cover-480.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-01",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 904,
+      "height": 1200,
+      "aspectRatio": 0.7533,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-01-800.avif",
+          "webp": "/media/presentations/presentations-01-800.webp",
+          "jpg": "/media/presentations/presentations-01-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-02",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1280,
+      "height": 720,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-02-1200.avif",
+          "webp": "/media/presentations/presentations-02-1200.webp",
+          "jpg": "/media/presentations/presentations-02-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-02-800.avif",
+          "webp": "/media/presentations/presentations-02-800.webp",
+          "jpg": "/media/presentations/presentations-02-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-03",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1280,
+      "height": 720,
+      "aspectRatio": 1.7778,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-03-1200.avif",
+          "webp": "/media/presentations/presentations-03-1200.webp",
+          "jpg": "/media/presentations/presentations-03-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-03-800.avif",
+          "webp": "/media/presentations/presentations-03-800.webp",
+          "jpg": "/media/presentations/presentations-03-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-04",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 937,
+      "height": 527,
+      "aspectRatio": 1.778,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-04-800.avif",
+          "webp": "/media/presentations/presentations-04-800.webp",
+          "jpg": "/media/presentations/presentations-04-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-05",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 939,
+      "height": 529,
+      "aspectRatio": 1.775,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-05-800.avif",
+          "webp": "/media/presentations/presentations-05-800.webp",
+          "jpg": "/media/presentations/presentations-05-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-06",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 938,
+      "height": 528,
+      "aspectRatio": 1.7765,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-06-800.avif",
+          "webp": "/media/presentations/presentations-06-800.webp",
+          "jpg": "/media/presentations/presentations-06-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-07",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 935,
+      "height": 526,
+      "aspectRatio": 1.7776,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-07-800.avif",
+          "webp": "/media/presentations/presentations-07-800.webp",
+          "jpg": "/media/presentations/presentations-07-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-08",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 937,
+      "height": 527,
+      "aspectRatio": 1.778,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-08-800.avif",
+          "webp": "/media/presentations/presentations-08-800.webp",
+          "jpg": "/media/presentations/presentations-08-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-09",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 935,
+      "height": 526,
+      "aspectRatio": 1.7776,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-09-800.avif",
+          "webp": "/media/presentations/presentations-09-800.webp",
+          "jpg": "/media/presentations/presentations-09-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-10",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 957,
+      "height": 538,
+      "aspectRatio": 1.7788,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-10-800.avif",
+          "webp": "/media/presentations/presentations-10-800.webp",
+          "jpg": "/media/presentations/presentations-10-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-11",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 955,
+      "height": 538,
+      "aspectRatio": 1.7751,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-11-800.avif",
+          "webp": "/media/presentations/presentations-11-800.webp",
+          "jpg": "/media/presentations/presentations-11-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-12",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 957,
+      "height": 538,
+      "aspectRatio": 1.7788,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-12-800.avif",
+          "webp": "/media/presentations/presentations-12-800.webp",
+          "jpg": "/media/presentations/presentations-12-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-13",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 955,
+      "height": 538,
+      "aspectRatio": 1.7751,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-13-800.avif",
+          "webp": "/media/presentations/presentations-13-800.webp",
+          "jpg": "/media/presentations/presentations-13-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-14",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 958,
+      "height": 539,
+      "aspectRatio": 1.7774,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-14-800.avif",
+          "webp": "/media/presentations/presentations-14-800.webp",
+          "jpg": "/media/presentations/presentations-14-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-15",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 959,
+      "height": 540,
+      "aspectRatio": 1.7759,
+      "variants": [
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-15-800.avif",
+          "webp": "/media/presentations/presentations-15-800.webp",
+          "jpg": "/media/presentations/presentations-15-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-16",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1716,
+      "height": 966,
+      "aspectRatio": 1.7764,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-16-1600.avif",
+          "webp": "/media/presentations/presentations-16-1600.webp",
+          "jpg": "/media/presentations/presentations-16-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-16-1200.avif",
+          "webp": "/media/presentations/presentations-16-1200.webp",
+          "jpg": "/media/presentations/presentations-16-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-16-800.avif",
+          "webp": "/media/presentations/presentations-16-800.webp",
+          "jpg": "/media/presentations/presentations-16-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-17",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1716,
+      "height": 966,
+      "aspectRatio": 1.7764,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-17-1600.avif",
+          "webp": "/media/presentations/presentations-17-1600.webp",
+          "jpg": "/media/presentations/presentations-17-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-17-1200.avif",
+          "webp": "/media/presentations/presentations-17-1200.webp",
+          "jpg": "/media/presentations/presentations-17-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-17-800.avif",
+          "webp": "/media/presentations/presentations-17-800.webp",
+          "jpg": "/media/presentations/presentations-17-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-18",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1715,
+      "height": 965,
+      "aspectRatio": 1.7772,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-18-1600.avif",
+          "webp": "/media/presentations/presentations-18-1600.webp",
+          "jpg": "/media/presentations/presentations-18-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-18-1200.avif",
+          "webp": "/media/presentations/presentations-18-1200.webp",
+          "jpg": "/media/presentations/presentations-18-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-18-800.avif",
+          "webp": "/media/presentations/presentations-18-800.webp",
+          "jpg": "/media/presentations/presentations-18-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-19",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1717,
+      "height": 966,
+      "aspectRatio": 1.7774,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-19-1600.avif",
+          "webp": "/media/presentations/presentations-19-1600.webp",
+          "jpg": "/media/presentations/presentations-19-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-19-1200.avif",
+          "webp": "/media/presentations/presentations-19-1200.webp",
+          "jpg": "/media/presentations/presentations-19-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-19-800.avif",
+          "webp": "/media/presentations/presentations-19-800.webp",
+          "jpg": "/media/presentations/presentations-19-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-20",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1717,
+      "height": 966,
+      "aspectRatio": 1.7774,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-20-1600.avif",
+          "webp": "/media/presentations/presentations-20-1600.webp",
+          "jpg": "/media/presentations/presentations-20-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-20-1200.avif",
+          "webp": "/media/presentations/presentations-20-1200.webp",
+          "jpg": "/media/presentations/presentations-20-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-20-800.avif",
+          "webp": "/media/presentations/presentations-20-800.webp",
+          "jpg": "/media/presentations/presentations-20-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-21",
+      "project": "presentations",
+      "kind": "frame",
+      "width": 1717,
+      "height": 966,
+      "aspectRatio": 1.7774,
+      "variants": [
+        {
+          "width": 1600,
+          "avif": "/media/presentations/presentations-21-1600.avif",
+          "webp": "/media/presentations/presentations-21-1600.webp",
+          "jpg": "/media/presentations/presentations-21-1600.jpg"
+        },
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-21-1200.avif",
+          "webp": "/media/presentations/presentations-21-1200.webp",
+          "jpg": "/media/presentations/presentations-21-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-21-800.avif",
+          "webp": "/media/presentations/presentations-21-800.webp",
+          "jpg": "/media/presentations/presentations-21-800.jpg"
+        }
+      ]
+    },
+    {
+      "id": "presentations-cover",
+      "project": "presentations",
+      "kind": "cover",
+      "width": 2752,
+      "height": 1536,
+      "aspectRatio": 1.7917,
+      "variants": [
+        {
+          "width": 1200,
+          "avif": "/media/presentations/presentations-cover-1200.avif",
+          "webp": "/media/presentations/presentations-cover-1200.webp",
+          "jpg": "/media/presentations/presentations-cover-1200.jpg"
+        },
+        {
+          "width": 800,
+          "avif": "/media/presentations/presentations-cover-800.avif",
+          "webp": "/media/presentations/presentations-cover-800.webp",
+          "jpg": "/media/presentations/presentations-cover-800.jpg"
+        },
+        {
+          "width": 480,
+          "avif": "/media/presentations/presentations-cover-480.avif",
+          "webp": "/media/presentations/presentations-cover-480.webp",
+          "jpg": "/media/presentations/presentations-cover-480.jpg"
+        }
+      ]
+    }
+  ],
+  "videos": [],
+  "vectors": []
+}
