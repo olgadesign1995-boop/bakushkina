@@ -1,7 +1,23 @@
+/*
+  Первый экран «Полка и лента».
+
+  Переменные, которыми управляет скрипт:
+    --p   прогресс скролла героя, 0…1
+    --mx  положение курсора по горизонтали, -1…1
+    --my  положение курсора по вертикали, -1…1
+
+  Все смещения считаются от них, поэтому движение остаётся согласованным.
+*/
+
 .hero {
+  --p: 0;
+  --mx: 0;
+  --my: 0;
+  position: relative;
   padding-top: calc(var(--header-height) + var(--space-10));
   padding-bottom: var(--space-12);
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
 }
 
 .grid {
@@ -28,13 +44,33 @@
   text-transform: uppercase;
   color: var(--ink-soft);
   background: var(--surface);
+  animation: eyebrow-in 0.8s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
+@keyframes eyebrow-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+/* Точка «на связи»: медленное дыхание, а не мигание. */
 .dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #3f9a54;
+  animation: pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(63 154 84 / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(63 154 84 / 0);
+  }
 }
 
 .title {
@@ -50,6 +86,7 @@
   color: var(--ink-soft);
   margin-bottom: var(--space-4);
   font-family: var(--font-sans);
+  animation: eyebrow-in 0.8s 0.05s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
 .lead {
@@ -57,6 +94,7 @@
   margin-inline: auto;
   color: var(--ink-soft);
   font-size: clamp(15px, 1.5vw, 17px);
+  animation: rise-in 0.9s 0.42s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
 .actions {
@@ -65,35 +103,70 @@
   gap: var(--space-3);
   justify-content: center;
   margin-top: var(--space-6);
+  animation: rise-in 0.9s 0.52s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
-/* Полюса композиции: слева предмет «на полке», справа кадр «в ленте». */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+/* ——— Полюса ——— */
+
 .pole {
   position: relative;
 }
 
 .poleFigure {
   margin: 0;
-  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
-  will-change: transform;
 }
 
+/*
+  Левый полюс. При скролле предмет приподнимается и разворачивается:
+  сначала виден «в лоб», затем чуть боком — как если взять вещь с полки.
+*/
 .shelf .poleFigure {
-  transform: translateY(var(--shelf-shift, 0));
+  transform: translate3d(calc(var(--mx) * -6px), calc(var(--p) * 34px + var(--my) * -5px), 0);
+  transition: transform 0.1s linear;
+  animation: pole-in 1.1s 0.15s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
-.feed .poleFigure {
-  transform: translateY(var(--feed-shift, 0));
+.shelfStage {
+  position: relative;
+  perspective: 900px;
 }
 
 .shelfImage {
+  position: relative;
+  z-index: 1;
   width: 100%;
   border-radius: var(--radius-md);
-  /* Мягкая тень «предмета на поверхности». */
+  transform: rotateY(calc(var(--p) * -13deg)) rotateX(calc(var(--p) * 4deg))
+    scale(calc(1 + var(--p) * 0.04));
+  transform-origin: 60% 50%;
+  transition: transform 0.12s linear;
   filter: drop-shadow(0 24px 28px rgb(22 21 26 / 0.13));
+  will-change: transform;
 }
 
-/* Линия полки под предметом. */
+/* Тень растёт вместе с «подъёмом» предмета. */
+.shelfShadow {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -10px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgb(22 21 26 / 0.22), transparent 70%);
+  opacity: calc(0.5 + var(--p) * 0.5);
+  transform: scaleX(calc(1 - var(--p) * 0.12));
+  transition:
+    opacity 0.12s linear,
+    transform 0.12s linear;
+}
+
 .shelfLine {
   margin-top: var(--space-4);
   height: 1px;
@@ -115,7 +188,20 @@
   text-align: center;
 }
 
-/* Правый полюс: кадр в рамке телефона-ленты. */
+/* Правый полюс: кадр в рамке ленты, отстаёт от скролла. */
+.feed .poleFigure {
+  transform: translate3d(calc(var(--mx) * 6px), calc(var(--p) * -34px + var(--my) * 5px), 0);
+  transition: transform 0.1s linear;
+  animation: pole-in 1.1s 0.25s cubic-bezier(0.16, 0.84, 0.24, 1) both;
+}
+
+@keyframes pole-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+}
+
 .feedFrame {
   border: 1px solid var(--line-strong);
   border-radius: 20px;
@@ -124,9 +210,18 @@
   box-shadow: 0 18px 40px rgb(22 21 26 / 0.08);
 }
 
+/* Окно ленты: кадр внутри медленно проплывает, как в проигрывании. */
+.feedViewport {
+  overflow: hidden;
+  border-radius: 13px;
+}
+
 .feedImage {
   width: 100%;
   border-radius: 13px;
+  transform: translateY(calc(var(--p) * -4%)) scale(1.05);
+  transition: transform 0.12s linear;
+  will-change: transform;
 }
 
 .feedBar {
@@ -153,6 +248,74 @@
   color: var(--ink-faint);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* Полоса «просмотра» — намёк на видео без тяжёлого плеера. */
+.feedProgress {
+  display: block;
+  margin: var(--space-2) var(--space-1) var(--space-1);
+  height: 2px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.feedProgressBar {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--ink-faint);
+  animation: play 7s linear infinite;
+}
+
+@keyframes play {
+  from {
+    width: 4%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Подсказка о прокрутке: исчезает, как только страница поехала. */
+.scrollHint {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-9);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  opacity: calc(1 - var(--p) * 4);
+  transition: opacity 0.2s linear;
+}
+
+.scrollHintLine {
+  width: 34px;
+  height: 1px;
+  background: var(--line-strong);
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollHintLine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ink-faint);
+  animation: sweep 2.4s cubic-bezier(0.16, 0.84, 0.24, 1) infinite;
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  60%,
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @media (max-width: 980px) {
@@ -183,11 +346,45 @@
     padding-bottom: var(--space-8);
   }
 
-  .poleFigure {
-    transform: none !important;
+  .shelf .poleFigure,
+  .feed .poleFigure {
+    transform: none;
+  }
+
+  .shelfImage,
+  .feedImage {
+    transform: none;
   }
 
   .poleLabel {
     font-size: 11px;
+  }
+
+  .scrollHint {
+    margin-top: var(--space-7);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shelf .poleFigure,
+  .feed .poleFigure,
+  .shelfImage,
+  .feedImage,
+  .eyebrow,
+  .name,
+  .lead,
+  .actions {
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .dot,
+  .feedProgressBar,
+  .scrollHintLine::after {
+    animation: none !important;
+  }
+
+  .scrollHint {
+    opacity: 1;
   }
 }
