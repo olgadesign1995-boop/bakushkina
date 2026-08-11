@@ -1,9 +1,13 @@
 import clsx from "clsx";
 
 import type { Project } from "@/data/projects";
+import { stagger } from "@/lib/motion";
 
 import { Button } from "./Button";
 import { Picture } from "./Picture";
+import { Reveal } from "./Reveal";
+import { StatValue } from "./StatValue";
+import { TiltCard } from "./TiltCard";
 import { VideoBlock } from "./VideoBlock";
 import styles from "./ProjectSection.module.css";
 
@@ -12,7 +16,15 @@ type ProjectSectionProps = {
   index: number;
 };
 
-/** Один проект: заголовок, обложка, развёртка по четырём шагам, галерея. */
+/**
+ * Один проект: заголовок, обложка, развёртка по четырём шагам, галерея.
+ *
+ * Движение здесь работает на чтение, а не на эффект:
+ * — обложка наклоняется под курсором, возвращая работе материальность;
+ * — шаги разбора появляются по очереди, поэтому взгляд идёт сверху вниз;
+ * — цифры результата докручиваются, задерживая внимание на главном;
+ * — кадры галереи открываются шторкой, как проявляющаяся печать.
+ */
 export function ProjectSection({ project, index }: ProjectSectionProps) {
   const headingId = `${project.id}-title`;
 
@@ -23,7 +35,7 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
       aria-labelledby={headingId}
       style={{ ["--project-accent" as string]: project.accent }}
     >
-      <header className={styles.header}>
+      <Reveal as="header" className={styles.header}>
         <div>
           <p className={styles.meta}>
             <span className={styles.accentBar} aria-hidden="true" />
@@ -43,33 +55,35 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
             </li>
           ))}
         </ul>
-      </header>
+      </Reveal>
 
-      <div className={styles.cover}>
-        <Picture
-          id={project.cover}
-          alt={project.coverAlt}
-          sizes="(max-width: 1240px) 100vw, 1200px"
-          className={styles.coverImage}
-        />
-      </div>
+      <Reveal variant="scale" className={styles.coverReveal}>
+        <TiltCard className={styles.cover} strength={4}>
+          <Picture
+            id={project.cover}
+            alt={project.coverAlt}
+            sizes="(max-width: 1240px) 100vw, 1200px"
+            className={styles.coverImage}
+          />
+        </TiltCard>
+      </Reveal>
 
       <div className={styles.steps}>
-        <div className={styles.step}>
+        <Reveal className={styles.step} delay={0}>
           <p className={styles.stepLabel}>
             <span className={styles.stepNumber}>01</span> Задача
           </p>
           <p className={styles.stepBody}>{project.task}</p>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step} delay={stagger.line}>
           <p className={styles.stepLabel}>
             <span className={styles.stepNumber}>02</span> Анализ проблемы
           </p>
           <p className={styles.stepBody}>{project.analysis}</p>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step} delay={stagger.line * 2}>
           <p className={styles.stepLabel}>
             <span className={styles.stepNumber}>03</span> Процесс
           </p>
@@ -80,52 +94,67 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
-        <div className={styles.step}>
+        <Reveal className={styles.step} delay={stagger.line * 3}>
           <p className={styles.stepLabel}>
             <span className={styles.stepNumber}>04</span> Готовое решение
           </p>
           <p className={styles.stepBody}>{project.outcome}</p>
-        </div>
+        </Reveal>
       </div>
 
       {project.stats ? (
-        <div className={styles.stats}>
+        <Reveal className={styles.stats}>
           {project.stats.map((stat) => (
             <div key={stat.value}>
-              <span className={styles.statValue}>{stat.value}</span>
+              <StatValue value={stat.value} className={styles.statValue} />
               <span className={styles.statLabel}>{stat.label}</span>
             </div>
           ))}
-        </div>
+        </Reveal>
       ) : null}
 
-      {project.quote ? <blockquote className={styles.quote}>{project.quote}</blockquote> : null}
+      {project.quote ? (
+        <Reveal as="blockquote" className={styles.quote}>
+          {project.quote}
+        </Reveal>
+      ) : null}
 
-      {project.note ? <p className={styles.note}>{project.note}</p> : null}
+      {project.note ? (
+        <Reveal as="p" variant="fade" className={styles.note}>
+          {project.note}
+        </Reveal>
+      ) : null}
 
       {project.gallery.length > 0 ? (
         <div className={styles.gallery}>
-          {project.gallery.map((item) => (
-            <figure
+          {project.gallery.map((item, galleryIndex) => (
+            <Reveal
               key={item.image}
+              as="figure"
+              variant="mask"
+              // Внутри ряда кадры открываются по очереди, но очередь короткая:
+              // после третьего задержка сбрасывается, иначе низ ждёт слишком долго.
+              delay={(galleryIndex % 3) * stagger.card}
               className={clsx(styles.galleryItem, item.wide && styles.wide)}
             >
-              <Picture
-                id={item.image}
-                alt={item.alt}
-                sizes={
-                  item.wide
-                    ? "(max-width: 640px) 100vw, (max-width: 900px) 100vw, 780px"
-                    : "(max-width: 640px) 100vw, (max-width: 900px) 50vw, 390px"
-                }
-                className={styles.galleryImage}
-              />
+              <TiltCard className={styles.galleryTilt} strength={3}>
+                <Picture
+                  id={item.image}
+                  alt={item.alt}
+                  sizes={
+                    item.wide
+                      ? "(max-width: 640px) 100vw, (max-width: 900px) 100vw, 780px"
+                      : "(max-width: 640px) 100vw, (max-width: 900px) 50vw, 390px"
+                  }
+                  className={styles.galleryImage}
+                />
+              </TiltCard>
               {item.caption ? (
                 <figcaption className={styles.galleryCaption}>{item.caption}</figcaption>
               ) : null}
-            </figure>
+            </Reveal>
           ))}
         </div>
       ) : null}
@@ -133,18 +162,15 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
       {project.videos && project.videos.length > 0 ? (
         <div className={styles.videos}>
           {project.videos.map((item) => (
-            <VideoBlock
-              key={item.video}
-              id={item.video}
-              title={item.title}
-              caption={item.caption}
-            />
+            <Reveal key={item.video} variant="scale">
+              <VideoBlock id={item.video} title={item.title} caption={item.caption} />
+            </Reveal>
           ))}
         </div>
       ) : null}
 
       {project.postStats ? (
-        <div className={styles.postStats}>
+        <Reveal className={styles.postStats}>
           <p className={styles.postStatsTitle}>{project.postStats.note}</p>
           <table className={styles.postStatsTable}>
             <thead>
@@ -162,10 +188,10 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
               ))}
             </tbody>
           </table>
-        </div>
+        </Reveal>
       ) : null}
 
-      <footer className={styles.footer}>
+      <Reveal as="footer" variant="fade" className={styles.footer}>
         <Button href="#contact" variant="ghost">
           Обсудить похожую задачу
         </Button>
@@ -179,7 +205,7 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
             {project.link.label} ↗
           </a>
         ) : null}
-      </footer>
+      </Reveal>
     </article>
   );
 }

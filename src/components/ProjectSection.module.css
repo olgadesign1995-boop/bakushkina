@@ -57,18 +57,38 @@
   color: var(--ink-soft);
 }
 
+/* Обёртка обложки: даёт наклону место и хранит нижний отступ. */
+.coverReveal {
+  margin-bottom: var(--space-10);
+}
+
 .cover {
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--surface-sunk);
-  margin-bottom: var(--space-10);
+  box-shadow: 0 10px 30px rgb(22 21 26 / 0.06);
+  transition:
+    box-shadow 0.4s cubic-bezier(0.16, 0.84, 0.24, 1),
+    transform 0.1s linear;
+}
+
+/* Под курсором обложка приподнимается: тень становится глубже. */
+.cover:hover {
+  box-shadow: 0 26px 60px rgb(22 21 26 / 0.14);
 }
 
 .coverImage {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transform: scale(1.005);
+  transition: transform 0.9s cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+/* Медленное приближение кадра — «камера подъезжает». */
+.cover:hover .coverImage {
+  transform: scale(1.035);
 }
 
 /* Развёртка: задача → анализ → процесс → решение */
@@ -237,16 +257,43 @@
   grid-column: span 2;
 }
 
-.galleryImage {
-  width: 100%;
+/* Кадр галереи: обрезка живёт здесь, чтобы приближение не выходило за края. */
+.galleryTilt {
+  position: relative;
   border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-sunk);
+  box-shadow: 0 6px 18px rgb(22 21 26 / 0.05);
+  transition: box-shadow 0.4s cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+.galleryTilt:hover {
+  box-shadow: 0 18px 40px rgb(22 21 26 / 0.12);
+}
+
+.galleryImage {
+  display: block;
+  width: 100%;
   background: var(--surface-sunk);
   object-fit: cover;
   aspect-ratio: 4 / 3;
+  transition: transform 0.8s cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+.galleryTilt:hover .galleryImage {
+  transform: scale(1.05);
 }
 
 .galleryItem.wide .galleryImage {
   aspect-ratio: 16 / 9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coverImage,
+  .galleryImage {
+    transform: none !important;
+    transition: none;
+  }
 }
 
 .galleryCaption {

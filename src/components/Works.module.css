@@ -96,3 +96,62 @@
     gap: var(--space-16);
   }
 }
+
+/*
+  Смена подборки после фильтра: список коротко гаснет и возвращается.
+  Это подсказывает, что содержимое поменялось, — иначе подмена незаметна.
+*/
+.listIn {
+  animation: list-in 0.5s cubic-bezier(0.16, 0.84, 0.24, 1) both;
+}
+
+@keyframes list-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+}
+
+/* Чип фильтра: заливка приходит снизу, а не мгновенно перекрашивается. */
+.chip {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.chip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--ink);
+  transform: translateY(101%);
+  transition: transform 0.32s cubic-bezier(0.16, 0.84, 0.24, 1);
+}
+
+.chip:hover::before {
+  transform: translateY(0);
+}
+
+.chip:hover {
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.chipActive::before {
+  transform: translateY(0);
+}
+
+.chip:disabled::before {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listIn {
+    animation: none;
+  }
+
+  .chip::before {
+    transition: none;
+  }
+}

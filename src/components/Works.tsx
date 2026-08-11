@@ -1,10 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { projectTags, projects, type ProjectTag } from "@/data/projects";
+import { prefersReducedMotion } from "@/lib/motion";
 
+import { AnimatedHeading } from "./AnimatedHeading";
 import { ProjectSection } from "./ProjectSection";
+import { Reveal } from "./Reveal";
 import styles from "./Works.module.css";
 
 const ALL = "Все работы" as const;
@@ -13,6 +16,9 @@ type Filter = typeof ALL | ProjectTag;
 
 export function Works() {
   const [filter, setFilter] = useState<Filter>(ALL);
+  // Ключ смены: заставляет список переигрывать появление после фильтрации.
+  const [pass, setPass] = useState(0);
+  const listRef = useRef<HTMLDivElement>(null);
 
   const counts = useMemo(() => {
     const map = new Map<Filter, number>([[ALL, projects.length]]);
@@ -35,20 +41,38 @@ export function Works() {
 
   const options: Filter[] = [ALL, ...projectTags];
 
+  // После смены фильтра список коротко «вздыхает»: гаснет и возвращается.
+  useEffect(() => {
+    const element = listRef.current;
+    if (!element) return;
+    if (prefersReducedMotion()) return;
+
+    element.classList.remove(styles.listIn);
+    // Пересчёт стилей, иначе браузер склеит удаление и добавление класса.
+    void element.offsetWidth;
+    element.classList.add(styles.listIn);
+  }, [pass]);
+
+  const choose = (option: Filter) => {
+    if (option === filter) return;
+    setFilter(option);
+    setPass((value) => value + 1);
+  };
+
   return (
     <section className={styles.section} id="works" aria-labelledby="works-title">
       <div className="container">
         <div className={styles.head}>
           <div className={styles.headText}>
-            <h2 id="works-title">Работы</h2>
-            <p>
+            <AnimatedHeading as="h2" id="works-title" lines={["Работы"]} />
+            <Reveal as="p" delay={0.12}>
               Каждый проект — с задачей, разбором проблемы, процессом и результатом.
               Отфильтруйте по типу работ, если ищете что-то конкретное.
-            </p>
+            </Reveal>
           </div>
         </div>
 
-        <ul className={styles.filter} role="list">
+        <Reveal as="ul" variant="fade" className={styles.filter} delay={0.16}>
           {options.map((option) => {
             const active = filter === option;
             const count = counts.get(option) ?? 0;
@@ -58,7 +82,7 @@ export function Works() {
                   type="button"
                   className={`${styles.chip} ${active ? styles.chipActive : ""}`}
                   aria-pressed={active}
-                  onClick={() => setFilter(option)}
+                  onClick={() => choose(option)}
                   disabled={count === 0}
                 >
                   {option}
@@ -67,11 +91,15 @@ export function Works() {
               </li>
             );
           })}
-        </ul>
+        </Reveal>
 
-        <div className={styles.list}>
+        <div className={styles.list} ref={listRef}>
           {visible.map((project, index) => (
-            <ProjectSection key={project.id} project={project} index={index} />
+            <ProjectSection
+              key={`${pass}-${project.id}`}
+              project={project}
+              index={index}
+            />
           ))}
         </div>
 
