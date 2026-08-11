@@ -1,0 +1,42 @@
+/*
+  Наклон карточки под курсором + мягкий блик за ним.
+  Даёт превью материальность вместо плоской картинки.
+*/
+
+.tilt {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Блик: широкое пятно света, идущее за курсором. */
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: calc(var(--glow, 0) * 0.5);
+  background: radial-gradient(
+    380px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+    rgba(255, 255, 255, 0.5),
+    transparent 62%
+  );
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt {
+    transform: none !important;
+  }
+
+  .glow {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .glow {
+    display: none;
+  }
+}

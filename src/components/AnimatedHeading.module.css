@@ -1,0 +1,39 @@
+/*
+  Заголовок, собирающийся по строкам.
+  Строка выезжает из-под линии — приём типографского набора.
+*/
+
+.heading {
+  display: block;
+}
+
+.lineWrap {
+  display: block;
+  overflow: hidden;
+  /* Запас под выносные элементы букв (р, у, д), иначе их срежет. */
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.line {
+  display: block;
+  transform: translate3d(0, 105%, 0);
+  transition:
+    transform 0.9s cubic-bezier(0.16, 0.84, 0.24, 1),
+    opacity 0.9s cubic-bezier(0.16, 0.84, 0.24, 1);
+  opacity: 0;
+  will-change: transform;
+}
+
+.visible .line {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .line {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+}

@@ -1,0 +1,50 @@
+/*
+  Появление блоков при входе в экран.
+  Все варианты используют одну кривую — движение по странице однородно.
+*/
+
+.reveal {
+  transition-property: opacity, transform, clip-path;
+  transition-duration: 0.72s;
+  transition-timing-function: cubic-bezier(0.16, 0.84, 0.24, 1);
+  will-change: opacity, transform;
+}
+
+/* Подъём: основной вариант для текста и карточек. */
+.rise {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+}
+
+/* Проявление без смещения: для мелких подписей. */
+.fade {
+  opacity: 0;
+}
+
+/* Шторка: изображение открывается снизу вверх, как проявка. */
+.mask {
+  opacity: 0;
+  clip-path: inset(14% 0 0 0);
+  transform: translate3d(0, 14px, 0);
+}
+
+/* Приближение: для крупных обложек. */
+.scale {
+  opacity: 0;
+  transform: scale(0.965);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+}
